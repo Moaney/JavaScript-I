@@ -19,35 +19,35 @@ const example = {
 
 // Write your intern objects here:
 
-const intern0 = {
+const mitzi = {
   'id': 1,
   'email': "mmelloy0@psu.edu",
   'firstName': "Mitzi",
   'gender': "F"
 }
 
-const intern1 = {
+const kennan = {
   'id': "2",
   'email': "kdiben1@tinypic.com",
   'firstName': "Kennan",
   'gender': "M"
 }
 
-const intern2 = {
+const keven = {
   'id': "3",
   'email': "kmummery2@wikimedia.org",
   'firstName': "Keven",
   'gender': "M"
 }
 
-const intern3 = {
+const gannie = {
   'id': "4",
   'email': "gmartinson3@illinois.edu",
   'firstName': "Gannie",
   'gender': "M"
 }
 
-const intern4 = {
+const antonietta = {
   'id': "5",
   'email': "adaine5@samsung.com",
   'firstName': "Antonietta",
@@ -59,26 +59,35 @@ const intern4 = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(intern0.firstName);
+console.log(mitzi.firstName);
 
 // Kennan's ID
-console.log(intern1.id);
+console.log(kennan.id);
 
 // Keven's email
-console.log(intern2.email);
+console.log(keven.email);
 
 // Gannie's name
-console.log(intern3.firstName);
+console.log(gannie.firstName);
 
 // Antonietta's Gender
-console.log(intern4.gender);
+console.log(antonietta.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+kennan.speak = function() {
+  return "Hello, my name is Kennan!";
+}
+console.log(kennan.speak());
+
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+antonietta.multiplyNums = function multiply() {
+  return 3 * 4;
+}
+console.log(antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -89,7 +98,7 @@ console.log(intern4.gender);
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+// const parent = {}
 
 // Log the parent object's name
 
